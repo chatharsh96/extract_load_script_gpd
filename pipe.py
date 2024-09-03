@@ -56,7 +56,7 @@ def geopackage_to_postgis_pipeline(url, table_name, db_url):
 if __name__ == "__main__":
     url = "https://api.os.uk/downloads/v1/products/OpenGreenspace/downloads?area=GB&format=GeoPackage&redirect"
     table_name = "my_tablee"
-    db_url = "postgresql://postgres:lulli@localhost:5432/postgis_34_sample"
+    db_url = "postgresql://username:password@localhost:5432/postgis_34_sample"
     
     result = geopackage_to_postgis_pipeline(url, table_name, db_url)
     print(result)
